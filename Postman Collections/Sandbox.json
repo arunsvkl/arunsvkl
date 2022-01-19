@@ -350,7 +350,7 @@
               "",
               "",
               "pm.test('Schema Validation', function () {",
-              "    pm.expect(tv4.validate(data1, schema)).to.be.true;",
+              "    pm.expect(tv4.validate(responseJson, schema)).to.be.true;",
               "});"
             ],
             "type": "text/javascript"
