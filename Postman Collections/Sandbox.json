@@ -386,7 +386,7 @@
           "response": []
         },
         {
-          "name": "New Request",
+          "name": "createUser",
           "event": [
             {
               "listen": "prerequest",
