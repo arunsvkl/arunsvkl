@@ -483,9 +483,12 @@
               }
             },
             "url": {
-              "raw": "{{CountryInfoServiceSoapBaseUrl}}/websamples.countryinfo/CountryInfoService.wso",
+              "raw": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso",
+              "protocol": "http",
               "host": [
-                "{{CountryInfoServiceSoapBaseUrl}}"
+                "webservices",
+                "oorsprong",
+                "org"
               ],
               "path": [
                 "websamples.countryinfo",
