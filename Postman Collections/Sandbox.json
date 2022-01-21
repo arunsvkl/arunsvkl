@@ -450,7 +450,7 @@
       "name": "SOAP",
       "item": [
         {
-          "name": "Stringify Copy",
+          "name": "Stringify",
           "event": [
             {
               "listen": "test",
