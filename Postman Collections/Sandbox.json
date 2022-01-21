@@ -447,6 +447,20 @@
       "item": [
         {
           "name": "ListOfContinentsByName Copy",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "ecebdb1d-adbe-4048-9ccb-6c930f8c38ef",
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
           "id": "76ab8b92-e392-4e1b-a9d7-9d7347098d3b",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
