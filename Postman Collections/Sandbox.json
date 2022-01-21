@@ -444,7 +444,88 @@
     },
     {
       "name": "New Folder",
-      "item": [],
+      "item": [
+        {
+          "name": "ListOfContinentsByName Copy",
+          "id": "76ab8b92-e392-4e1b-a9d7-9d7347098d3b",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "text/xml; charset=utf-8"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <ListOfContinentsByName xmlns=\"http://www.oorsprong.org/websamples.countryinfo\"/>\n  </soap:Body>\n</soap:Envelope>\n",
+              "options": {
+                "raw": {
+                  "language": "xml"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{CountryInfoServiceSoapBaseUrl}}/websamples.countryinfo/CountryInfoService.wso",
+              "host": [
+                "{{CountryInfoServiceSoapBaseUrl}}"
+              ],
+              "path": [
+                "websamples.countryinfo",
+                "CountryInfoService.wso"
+              ],
+              "query": [
+                {
+                  "key": "",
+                  "value": "",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Returns a list of continents ordered by name."
+          },
+          "response": [
+            {
+              "id": "6319ec37-0287-4ad0-89a7-1ba0b1dc9690",
+              "name": "ListOfContinentsByName response",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "text/xml; charset=utf-8"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <ListOfContinentsByName xmlns=\"http://www.oorsprong.org/websamples.countryinfo\"/>\n  </soap:Body>\n</soap:Envelope>\n",
+                  "options": {
+                    "raw": {
+                      "language": "xml"
+                    }
+                  }
+                },
+                "url": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "xml",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/xml; charset=utf-8"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <ListOfContinentsByNameResponse xmlns=\"http://www.oorsprong.org/websamples.countryinfo\">\n      <ListOfContinentsByNameResult>\n        <tContinent>\n          <sCode>string</sCode>\n          <sName>string</sName>\n        </tContinent>\n      </ListOfContinentsByNameResult>\n    </ListOfContinentsByNameResponse>\n  </soap:Body>\n</soap:Envelope>\n"
+            }
+          ]
+        }
+      ],
       "id": "98d1c46c-9e94-4aa5-a514-7936701252c6"
     }
   ]
