@@ -435,10 +435,6 @@
           "request": {
             "method": "POST",
             "header": [],
-            "body": {
-              "mode": "file",
-              "file": {}
-            },
             "url": "https://reqres.in/api/users"
           },
           "response": []
