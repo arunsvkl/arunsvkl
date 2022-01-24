@@ -701,12 +701,13 @@
                   "    for (i = 0; i < 10; i++) {",
                   "        for (var prop in MyArray[i]) {",
                   "",
-                  "            console.log(i + \" : \" + responseJson.result[i].description );",
+                  "            console.log(i + \" : \" + responseJson.result[i].description);",
                   "",
                   "            pm.expect(pm.response.text()).to.include('description');",
-                  "            ",
+                  "",
                   "        }",
-                  "        }});",
+                  "    }",
+                  "});",
                   "pm.test(\"Symbol matches string\", function () {",
                   "",
                   "    for (i = 0; i < 10; i++) {",
@@ -714,7 +715,8 @@
                   "",
                   "            pm.expect(responseJson.result[i].description).to.equal(\"Apple\");",
                   "        }",
-                  "        }});"
+                  "    }",
+                  "});"
                 ],
                 "type": "text/javascript"
               }
