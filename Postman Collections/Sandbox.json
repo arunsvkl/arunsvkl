@@ -691,7 +691,7 @@
                   "pm.test(\"Status code is 200\", function () {",
                   "    pm.response.to.have.status(200);",
                   "});",
-                  "",
+                  "var MyArray = pm.response.json();",
                   "pm.test(\"Body matches string\", function () {",
                   "",
                   "    for (i = 0; i < 10; i++) {",
