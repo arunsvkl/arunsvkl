@@ -452,7 +452,7 @@
               "mode": "raw",
               "raw": "{\n    \"name\": \"morpheus\",\n    \"job\": \"zion resident\"\n}"
             },
-            "url": "https://reqres.in/api/users/2"
+            "url": "{{myurl}}/users/2"
           },
           "response": []
         }
