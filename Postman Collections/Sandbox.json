@@ -503,6 +503,19 @@
             "url": "https://reqres.in/api/register"
           },
           "response": []
+        },
+        {
+          "name": "New Request",
+          "id": "a8adbd30-961d-4c89-9748-5db8ca521028",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": null
+          },
+          "response": []
         }
       ],
       "id": "baa5fcee-ae67-4e61-9123-1b5e7977cc1f"
