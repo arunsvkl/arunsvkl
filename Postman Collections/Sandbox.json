@@ -712,7 +712,7 @@
                   "    for (i = 0; i < 10; i++) {",
                   "        for (var prop in MyArray[i]) {",
                   "",
-                  "            pm.expect(responseJson.result[i].description).to.equal(\"fghggf\");",
+                  "            pm.expect(responseJson.result[i].description).to.equal(\"Apple\");",
                   "        }",
                   "        }});"
                 ],
