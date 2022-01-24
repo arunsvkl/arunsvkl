@@ -435,6 +435,10 @@
           "request": {
             "method": "POST",
             "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"morpheus\",\n    \"job\": \"leader\"\n}"
+            },
             "url": "{{myurl}}/users"
           },
           "response": []
