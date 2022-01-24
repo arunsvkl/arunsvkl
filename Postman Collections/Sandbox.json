@@ -700,6 +700,15 @@
                   "            pm.expect(pm.response.text()).to.include('description');",
                   "            pm.expect(responseJson.data[1].description).to.equal(\"Apple\");",
                   "        }",
+                  "        }});",
+                  "pm.test(\"Symbol matches string\", function () {",
+                  "",
+                  "    for (i = 0; i < 10; i++) {",
+                  "        for (var prop in MyArray[i]) {",
+                  "",
+                  "            pm.expect(pm.response.text()).to.include('description');",
+                  "            pm.expect(responseJson.data[1].description).to.equal(\"Apple\");",
+                  "        }",
                   "        }});"
                 ],
                 "type": "text/javascript"
