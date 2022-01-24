@@ -692,7 +692,7 @@
                   "pm.test(\"Status code is 200\", function () {",
                   "    pm.response.to.have.status(200);",
                   "});",
-                  "var MyArray = pm.response.json();",
+                  "",
                   "var MyArray = pm.response.json().result;",
                   "const responseJson = pm.response.json();",
                   "",
