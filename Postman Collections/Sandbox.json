@@ -513,7 +513,11 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": null
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"email\": \"eve.holt@reqres.in\",\n    \"password\": \"cityslicka\"\n}"
+            },
+            "url": "https://reqres.in/api/login"
           },
           "response": []
         }
