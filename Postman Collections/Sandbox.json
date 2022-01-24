@@ -706,7 +706,7 @@
                   "    for (i = 0; i < 10; i++) {",
                   "        for (var prop in MyArray[i]) {",
                   "",
-                  "            pm.expect(responseJson.result[1].description).to.equal(\"Apples\");",
+                  "            pm.expect(responseJson.result[1].description).to.equal(\"fghggf\");",
                   "        }",
                   "        }});"
                 ],
