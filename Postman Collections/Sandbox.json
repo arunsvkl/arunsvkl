@@ -618,7 +618,7 @@
       "name": "YahooFinance",
       "item": [
         {
-          "name": "getSymbol",
+          "name": "getStockSymbol",
           "event": [
             {
               "listen": "test",
