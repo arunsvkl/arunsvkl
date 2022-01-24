@@ -781,6 +781,7 @@
                   "    }",
                   "});",
                   "pm.test(\"Symbol matches string\", function () {",
+                  "    console.log ( \"Count Value :\"+cnt);",
                   "",
                   "    for (i = 0; i < cnt; i++) {",
                   "        for (var prop in MyArray[i]) {",
