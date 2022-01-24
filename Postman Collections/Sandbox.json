@@ -463,9 +463,9 @@
             "disableBodyPruning": true
           },
           "request": {
-            "method": "GET",
+            "method": "DELETE",
             "header": [],
-            "url": null
+            "url": "{{myurl}}/users/2"
           },
           "response": []
         }
