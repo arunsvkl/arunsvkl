@@ -767,6 +767,7 @@
                   "    pm.response.to.have.status(200);",
                   "});",
                   "var MyArray = pm.response.json().result;",
+                  "var cnt = pm.response.json().result;",
                   "const responseJson = pm.response.json();",
                   "",
                   "pm.test(\"Body matches string\", function () {",
