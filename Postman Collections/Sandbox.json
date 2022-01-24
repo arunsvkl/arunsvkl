@@ -636,7 +636,7 @@
                   "",
                   "    for (i = 0; i < MyArray.length; i++) {",
                   "        for (var prop in MyArray[i]) {",
-                  "            pm.expect(pm.response.text()).to.include(\"id\");",
+                  "            pm.expect(pm.response.text()).to.include('symbol');",
                   "        }",
                   "        }});",
                   ""
