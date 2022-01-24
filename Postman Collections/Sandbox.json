@@ -618,7 +618,7 @@
       "name": "YahooFinance",
       "item": [
         {
-          "name": "New Request",
+          "name": "getSymbol",
           "event": [
             {
               "listen": "test",
