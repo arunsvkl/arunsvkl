@@ -458,6 +458,20 @@
         },
         {
           "name": "deleteUser",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "a38005e2-90fe-4747-bcd1-87a9e69a6c86",
+                "exec": [
+                  "pm.test(\"Status code is 204\", function () {",
+                  "    pm.response.to.have.status(204);",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
           "id": "d3c15f3a-abb9-4fe7-be99-241a7dbb873f",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
