@@ -746,6 +746,73 @@
             }
           },
           "response": []
+        },
+        {
+          "name": "getSymbolLookup_IBM",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "08204567-cefa-4a24-b550-51cb53033528",
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "var MyArray = pm.response.json();",
+                  "pm.test(\"Body matches string\", function () {",
+                  "",
+                  "    for (i = 0; i < 10; i++) {",
+                  "        for (var prop in MyArray[i]) {",
+                  "",
+                  "            pm.expect(pm.response.text()).to.include('description');",
+                  "            pm.expect(responseJson.data[1].description).to.equal(\"Apple\");",
+                  "        }",
+                  "        }});",
+                  "pm.test(\"Symbol matches string\", function () {",
+                  "",
+                  "    for (i = 0; i < 10; i++) {",
+                  "        for (var prop in MyArray[i]) {",
+                  "            ",
+                  "            pm.expect(responseJson.data[1].description).to.equal(\"Apple\");",
+                  "        }",
+                  "        }});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "id": "6eb6b92c-1d9a-4e0e-8e21-81f9c663080a",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://finnhub.io/api/v1/search?q=apple&token=c7ngea2ad3ifj5l0dn20",
+              "protocol": "https",
+              "host": [
+                "finnhub",
+                "io"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "search"
+              ],
+              "query": [
+                {
+                  "key": "q",
+                  "value": "apple"
+                },
+                {
+                  "key": "token",
+                  "value": "c7ngea2ad3ifj5l0dn20"
+                }
+              ]
+            }
+          },
+          "response": []
         }
       ],
       "id": "44cbbcdf-6215-4437-9360-9416079706fa"
