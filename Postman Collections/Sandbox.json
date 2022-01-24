@@ -766,7 +766,8 @@
                   "pm.test(\"Status code is 200\", function () {",
                   "    pm.response.to.have.status(200);",
                   "});",
-                  "var MyArray = pm.response.json();",
+                  "var MyArray = pm.response.json().result;",
+                  "",
                   "pm.test(\"Body matches string\", function () {",
                   "",
                   "    for (i = 0; i < 10; i++) {",
@@ -782,6 +783,7 @@
                   "        for (var prop in MyArray[i]) {",
                   "            ",
                   "            pm.expect(responseJson.data[1].description).to.equal(\"Apple\");",
+                  "            pm.expect(responseJson.result[i].description).to.equal(\"Apple\");",
                   "        }",
                   "        }});"
                 ],
@@ -797,7 +799,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://finnhub.io/api/v1/search?q=apple&token=c7ngea2ad3ifj5l0dn20",
+              "raw": "https://finnhub.io/api/v1/search?q=ibm&token=c7ngea2ad3ifj5l0dn20",
               "protocol": "https",
               "host": [
                 "finnhub",
@@ -811,7 +813,7 @@
               "query": [
                 {
                   "key": "q",
-                  "value": "apple"
+                  "value": "ibm"
                 },
                 {
                   "key": "token",
