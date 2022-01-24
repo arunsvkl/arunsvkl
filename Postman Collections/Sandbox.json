@@ -619,6 +619,31 @@
       "item": [
         {
           "name": "New Request",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "c5d55b01-ed69-4ad8-8244-8e1441f227fe",
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "var MyArray = pm.response.json().data;",
+                  "",
+                  "   for (i = 0; i < MyArray.length; i++) {",
+                  "        for (var prop in MyArray[i]) {",
+                  "            pm.expect(pm.response.text()).to.include(\"id\");",
+                  "",
+                  "",
+                  "            pm.test(\"Body matches string\", function () {",
+                  "                pm.expect(pm.response.text()).to.include(\"string_you_want_to_search\");",
+                  "            });",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
           "id": "aebc7501-9534-4adb-af8f-ee3b75fea8a4",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
