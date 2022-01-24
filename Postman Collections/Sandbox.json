@@ -435,7 +435,7 @@
           "request": {
             "method": "POST",
             "header": [],
-            "url": "https://reqres.in/api/users"
+            "url": "{{myurl}}/users"
           },
           "response": []
         },
