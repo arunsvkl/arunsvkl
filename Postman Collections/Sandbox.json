@@ -681,7 +681,7 @@
           "response": []
         },
         {
-          "name": "getSymbolLookup",
+          "name": "getSymbolLookup_APPLE",
           "event": [
             {
               "listen": "test",
