@@ -445,6 +445,22 @@
         },
         {
           "name": "updateUser",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "9e8cf2e3-45be-4260-8d58-1280d2c07bd2",
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "",
+                  "pm.expect(pm.response.text()).to.include(\"updatedAt\");"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
           "id": "b1ad930d-3754-4bd2-b958-c35c358abf84",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
