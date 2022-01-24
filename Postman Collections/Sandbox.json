@@ -682,6 +682,29 @@
         },
         {
           "name": "getSymbolLookup",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "f3ee317b-b268-4ad0-a600-ff9f6cd01711",
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "",
+                  "pm.test(\"Body matches string\", function () {",
+                  "",
+                  "    for (i = 0; i < 10; i++) {",
+                  "        for (var prop in MyArray[i]) {",
+                  "",
+                  "            pm.expect(pm.response.text()).to.include('description');",
+                  "        }",
+                  "        }});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
           "id": "8fa57663-4f92-4903-860e-fe32f376f720",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -689,7 +712,29 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": null
+            "url": {
+              "raw": "https://finnhub.io/api/v1/search?q=apple&token=c7ngea2ad3ifj5l0dn20",
+              "protocol": "https",
+              "host": [
+                "finnhub",
+                "io"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "search"
+              ],
+              "query": [
+                {
+                  "key": "q",
+                  "value": "apple"
+                },
+                {
+                  "key": "token",
+                  "value": "c7ngea2ad3ifj5l0dn20"
+                }
+              ]
+            }
           },
           "response": []
         }
