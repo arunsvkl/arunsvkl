@@ -616,7 +616,21 @@
     },
     {
       "name": "YahooFinance",
-      "item": [],
+      "item": [
+        {
+          "name": "New Request",
+          "id": "aebc7501-9534-4adb-af8f-ee3b75fea8a4",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": null
+          },
+          "response": []
+        }
+      ],
       "id": "44cbbcdf-6215-4437-9360-9416079706fa"
     }
   ]
