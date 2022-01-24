@@ -455,7 +455,12 @@
                   "    pm.response.to.have.status(200);",
                   "});",
                   "",
-                  "pm.expect(pm.response.text()).to.include(\"updatedAt\");"
+                  "",
+                  "pm.test(\"Content Validation\", function () {",
+                  "    ",
+                  "    pm.expect(pm.response.text()).to.include(\"updatedAt\");",
+                  "});",
+                  ""
                 ],
                 "type": "text/javascript"
               }
