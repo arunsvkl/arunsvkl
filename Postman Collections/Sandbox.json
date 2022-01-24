@@ -708,7 +708,7 @@
                   "        }",
                   "    }",
                   "});",
-                  "pm.test(\"Symbol matches string\", function () {",
+                  "pm.test(\"Symbol Description string\", function () {",
                   "",
                   "    for (i = 0; i < 10; i++) {",
                   "        for (var prop in MyArray[i]) {",
