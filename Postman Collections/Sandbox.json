@@ -779,7 +779,7 @@
                   "",
                   "        }",
                   "    }",
-                  "    console.clear();",
+                  "    ",
                   "});",
                   "// pm.test(\"Symbol matches string\", function () {",
                   "//     console.log(\"Count Value :\" + cnt);",
