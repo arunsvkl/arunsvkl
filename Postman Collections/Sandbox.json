@@ -763,9 +763,6 @@
               "script": {
                 "id": "08204567-cefa-4a24-b550-51cb53033528",
                 "exec": [
-                  "const { Console } = require('console');",
-                  "",
-                  "",
                   "pm.test(\"Status code is 200\", function () {",
                   "    pm.response.to.have.status(200);",
                   "});",
