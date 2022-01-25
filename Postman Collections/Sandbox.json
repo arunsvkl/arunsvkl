@@ -313,7 +313,7 @@
                   "    response: pm.response.json()",
                   "});",
                   "pm.test.skip(\"TobeSkipped-Status code is 200\", () => {",
-                  "    pm.response.to.have.status(201);",
+                  "    pm.response.to.have.status(200);",
                   "});",
                   "",
                   "",
