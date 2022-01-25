@@ -790,7 +790,7 @@
                   "            //    pm.expect(responseJson.result[i].description).to.equal(\"INTL BUSINESS MACHINES CORP\") ||    pm.expect(responseJson.result[i].description).to.include(\"ISHARES\");",
                   "",
                   "           ",
-                  "                pm.expect(responseJson.result[i].description).to.be.eql(\"INTL BUSINESS MACHINES CORP\") || responseJson.result[i].description.to.include(\"ISHARE\");",
+                  "            ",
                   "            ",
                   "        }",
                   "    }",
