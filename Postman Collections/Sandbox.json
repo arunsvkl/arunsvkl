@@ -274,7 +274,7 @@
                   "pm.test(\"Sample Test\", function () {",
                   "    // const responseJson = pm.response.json();",
                   "    // var MyArray = pm.response.json().data;",
-                  "    pm.response.to.have.status(200);",
+                  "    pm.response.to.have.status(201);",
                   "    pm.expect(responseJson.total).to.equal(12);",
                   "    pm.expect(responseJson.data[1].first_name).to.equal(\"Lindsay\");",
                   "    pm.expect(MyArray.length).to.equal(6)",
