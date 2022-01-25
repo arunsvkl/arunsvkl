@@ -842,7 +842,7 @@
                   "",
                   "            pm.expect(pm.response.text()).to.include('description');",
                   "            console.log(responseJson.result[i].displaySymbol)",
-                  "            pm.expect(responseJson.result[i].displaySymbol).to.includes(\"TSLA\")",
+                  "            pm.expect(responseJson.result[i].displaySymbol).to.includes(\"TSLA\");",
                   "",
                   "        }",
                   "    }",
