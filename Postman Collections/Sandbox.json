@@ -821,7 +821,7 @@
           "response": []
         },
         {
-          "name": "getSymbolLookup_IBM Copy",
+          "name": "getSymbolLookup_TSLA",
           "event": [
             {
               "listen": "test",
