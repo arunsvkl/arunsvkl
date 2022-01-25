@@ -860,7 +860,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://finnhub.io/api/v1/search?q=ibm&token=c7ngea2ad3ifj5l0dn20",
+              "raw": "https://finnhub.io/api/v1/search?q=tsla&token=c7ngea2ad3ifj5l0dn20",
               "protocol": "https",
               "host": [
                 "finnhub",
@@ -874,7 +874,7 @@
               "query": [
                 {
                   "key": "q",
-                  "value": "ibm"
+                  "value": "tsla"
                 },
                 {
                   "key": "token",
