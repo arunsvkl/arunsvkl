@@ -704,7 +704,7 @@
                   "            console.log(i + \" : \" + responseJson.result[i].description);",
                   "",
                   "            pm.expect(pm.response.text()).to.include('description');",
-                  "",
+                  "            pm.expect(responseJson.result[i].description).to.includes(\"Apple\");",
                   "        }",
                   "    }",
                   "});",
