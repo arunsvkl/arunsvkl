@@ -819,6 +819,71 @@
             }
           },
           "response": []
+        },
+        {
+          "name": "getSymbolLookup_IBM Copy",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "a84281b2-42bd-4a93-b21b-562a860be6a7",
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "var MyArray = pm.response.json().result;",
+                  "var cnt = pm.response.json().count;",
+                  "const responseJson = pm.response.json();",
+                  "",
+                  "pm.test(\"Body matches string\", function () {",
+                  "",
+                  "    for (i = 0; i < 10; i++) {",
+                  "        for (var prop in MyArray[i]) {",
+                  "",
+                  "            pm.expect(pm.response.text()).to.include('description');",
+                  "",
+                  "        }",
+                  "    }",
+                  "    ",
+                  "});",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "id": "db02f5cc-8db0-429b-adfa-00433a4090a1",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://finnhub.io/api/v1/search?q=ibm&token=c7ngea2ad3ifj5l0dn20",
+              "protocol": "https",
+              "host": [
+                "finnhub",
+                "io"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "search"
+              ],
+              "query": [
+                {
+                  "key": "q",
+                  "value": "ibm"
+                },
+                {
+                  "key": "token",
+                  "value": "c7ngea2ad3ifj5l0dn20"
+                }
+              ]
+            }
+          },
+          "response": []
         }
       ],
       "id": "44cbbcdf-6215-4437-9360-9416079706fa"
