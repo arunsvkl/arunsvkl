@@ -824,7 +824,7 @@
           "response": []
         },
         {
-          "name": "New Request",
+          "name": "getSymbols",
           "id": "74b67f95-0e30-4330-8659-30ac1a9f5772",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
