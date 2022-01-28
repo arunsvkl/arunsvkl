@@ -832,7 +832,30 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": null
+            "url": {
+              "raw": "https://finnhub.io/api/v1/stock/symbol?exchange=US&token=c7ngea2ad3ifj5l0dn20",
+              "protocol": "https",
+              "host": [
+                "finnhub",
+                "io"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "stock",
+                "symbol"
+              ],
+              "query": [
+                {
+                  "key": "exchange",
+                  "value": "US"
+                },
+                {
+                  "key": "token",
+                  "value": "c7ngea2ad3ifj5l0dn20"
+                }
+              ]
+            }
           },
           "response": []
         }
