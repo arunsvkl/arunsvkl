@@ -822,6 +822,42 @@
             }
           },
           "response": []
+        },
+        {
+          "name": "getSymbols",
+          "id": "3dd36ac8-9d63-4adb-bfdc-b2b7b25ab9b5",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://finnhub.io/api/v1/stock/symbol?exchange=US&token=c7ngea2ad3ifj5l0dn20",
+              "protocol": "https",
+              "host": [
+                "finnhub",
+                "io"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "stock",
+                "symbol"
+              ],
+              "query": [
+                {
+                  "key": "exchange",
+                  "value": "US"
+                },
+                {
+                  "key": "token",
+                  "value": "c7ngea2ad3ifj5l0dn20"
+                }
+              ]
+            }
+          },
+          "response": []
         }
       ],
       "id": "44cbbcdf-6215-4437-9360-9416079706fa"
