@@ -728,7 +728,7 @@
                   "            pm.expect(responseJson.result[i].displaySymbol)",
                   "            var Desc = pm.response.json().result[i].description;",
                   "            console.log(\"Description Value \" + i + \" :\" + Desc)",
-                  "            pm.expect(Desc.startsWith('INTL') || Desc.startsWith('ISHARES')|| Desc.startsWith('IBM')|| Desc.startsWith('Bibm Perp')Desc.startsWith('IBSM SA')).to.be.true;// true",
+                  "            pm.expect(Desc.startsWith('INTL') || Desc.startsWith('ISHARES')|| Desc.startsWith('IBM')|| Desc.startsWith('Bibm Perp')|| Desc.startsWith('IBSM SA')).to.be.true;// true",
                   "        }",
                   "    }",
                   "",
