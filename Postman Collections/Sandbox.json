@@ -727,7 +727,7 @@
                   "            pm.expect(responseJson.result[i].displaySymbol)",
                   "            var Desc = pm.response.json().result[0].description;",
                   "            console.log(\"Description Value :\"+Desc)",
-                  "            console.log(Desc.startsWith('Linux'));// true",
+                  "             pm.expect(Desc.startsWith('Linux')).to.be.true;// true",
                   "        }",
                   "    }",
                   "",
