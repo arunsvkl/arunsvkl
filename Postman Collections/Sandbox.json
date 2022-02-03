@@ -717,6 +717,18 @@
                   "    }",
                   "",
                   "});",
+                  "",
+                  "pm.test(\"MyOwn Validation\", function () {",
+                  "",
+                  "    for (i = 0; i < 1; i++) {",
+                  "        for (var prop in MyArray[i]) {",
+                  "",
+                  "            pm.expect(pm.response.text()).to.include('description');",
+                  "            pm.expect(responseJson.result[i].displaySymbol).to.includes(\"IBM\");",
+                  "        }",
+                  "    }",
+                  "",
+                  "});",
                   ""
                 ],
                 "type": "text/javascript"
