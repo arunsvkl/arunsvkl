@@ -720,7 +720,7 @@
                   "",
                   "pm.test(\"MyOwn Validation\", function () {",
                   "",
-                  "    for (i = 0; i < 1; i++) {",
+                  "    for (i = 0; i < 3; i++) {",
                   "        for (var prop in MyArray[i]) {",
                   "",
                   "            pm.expect(pm.response.text()).to.include('description');",
