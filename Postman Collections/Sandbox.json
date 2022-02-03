@@ -738,7 +738,7 @@
                   "",
                   "        //  Approach 2 for Validation",
                   "        const firstword = Desc.split(' ')[0];",
-                  "        const ExpVals = [\"INTL\",\"ISHARES\",\"IBM\",\"Bibm Perp\",\"IBSN SA\",\"FIEBM\"];",
+                  "        const ExpVals = [\"INTL\",\"ISHARES\",\"IBM\",\"Bibm\",\"IBSN SA\",\"FIEBM\"];",
                   "        console.log(\"Refined Description Value \" + i + \" :\" + firstword);",
                   "        // console.log(ExpVals.include(firstword));",
                   "        pm.expect(ExpVals).to.includes(firstword);",
