@@ -726,7 +726,7 @@
                   "            pm.expect(pm.response.text()).to.include('description');",
                   "            pm.expect(responseJson.result[i].displaySymbol)",
                   "            var Desc = pm.response.json().result[i].description;",
-                  "            console.log(\"Description Value \"+\"i :\"+Desc)",
+                  "            console.log(\"Description Value \"+i+\" :\"+Desc)",
                   "             pm.expect(Desc.startsWith('INTL')).to.be.true;// true",
                   "        }",
                   "    }",
