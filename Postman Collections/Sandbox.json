@@ -721,7 +721,7 @@
                   "pm.test(\"MyOwn Validation\", function () {",
                   "    console.log(\"Result Array Length  :\" + MyArray.length);",
                   "",
-                  "    for (i = 0; i < 15; i++) {",
+                  "    for (i = 0; i < MyArray.length; i++) {",
                   "        for (var prop in MyArray[i]) {",
                   "",
                   "            pm.expect(pm.response.text()).to.include('description');",
