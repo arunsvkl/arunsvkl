@@ -725,7 +725,7 @@
                   "",
                   "            pm.expect(pm.response.text()).to.include('description');",
                   "            pm.expect(responseJson.result[i].displaySymbol)",
-                  "            var Desc = pm.response.json().data.result[0].description;",
+                  "            var Desc = pm.response.json().data;",
                   "            console.log(\"Description Value \"+Desc)",
                   "        }",
                   "    }",
