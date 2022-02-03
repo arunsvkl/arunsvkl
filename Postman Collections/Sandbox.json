@@ -714,7 +714,7 @@
                   "            pm.expect(pm.response.text()).to.include('description');",
                   "            // pm.expect(responseJson.result[i].displaySymbol).to.includes(\"IBM\");",
                   "            var DispSym = pm.response.json().result[i].displaySymbol;",
-                  "            pm.expect(DispSym.startsWith('IBM') || DispSym.startsWith('A28TEG')).to.be.true;// true",
+                  "            pm.expect(DispSym.startsWith('IBM') || DispSym.startsWith('A28TE')).to.be.true;// true",
                   "        }",
                   "    }",
                   "",
