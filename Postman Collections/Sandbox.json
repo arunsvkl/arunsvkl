@@ -732,7 +732,7 @@
                   "            var Desc = pm.response.json().result[i].description;",
                   "            console.log(\"Description Value \" + i + \" :\" + Desc)",
                   "            // pm.expect(Desc.startsWith('INTL') || Desc.startsWith('ISHARES')|| Desc.startsWith('IBM')|| Desc.startsWith('Bibm Perp')|| Desc.startsWith('IBSM SA')|| Desc.startsWith('FIEBM')).to.be.true;// true",
-                  "             pm.expect(Desc.startsWith('INTL' || 'ISHARES')|| Desc.startsWith('IBM')|| Desc.startsWith('Bibm Perp')|| Desc.startsWith('IBSM SA')|| Desc.startsWith('FIEBM')).to.be.true;// true",
+                  "             pm.expect(Desc.startsWith(/^('INTL' || 'ISHARES')$/)|| Desc.startsWith('IBM')|| Desc.startsWith('Bibm Perp')|| Desc.startsWith('IBSM SA')|| Desc.startsWith('FIEBM')).to.be.true;// true",
                   "        }",
                   "    }",
                   "",
