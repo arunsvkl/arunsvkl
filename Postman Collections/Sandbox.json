@@ -713,7 +713,7 @@
                   "",
                   "            pm.expect(pm.response.text()).to.include('description');",
                   "            // pm.expect(responseJson.result[i].displaySymbol).to.includes(\"IBM\");",
-                  "            var DispSym = pm.response.json().result[i].description;",
+                  "            var DispSym = pm.response.json().result[i].displaySymbol;",
                   "            pm.expect(DispSym.startsWith('IBM') || Desc.startsWith('ISHARES')).to.be.true;// true",
                   "        }",
                   "    }",
