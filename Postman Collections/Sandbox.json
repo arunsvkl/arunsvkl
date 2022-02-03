@@ -738,6 +738,7 @@
                   "",
                   "        //  Approach 2 for Validation",
                   "        const firstword = Desc.split(' ')[0];",
+                  "        const ExpVals = [1, 2, 3];",
                   "        console.log(\"Refined Description Value \" + i + \" :\" + firstword)",
                   "    }",
                   "",
