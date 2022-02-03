@@ -727,7 +727,7 @@
                   "            pm.expect(responseJson.result[i].displaySymbol)",
                   "            var Desc = pm.response.json().result[0].description;",
                   "            // console.log(\"Description Value :\"+Desc)",
-                  "             pm.expect(Desc.startsWith('IBM')).to.be.true;// true",
+                  "             pm.expect(Desc.startsWith('IBM'));// true",
                   "        }",
                   "    }",
                   "",
