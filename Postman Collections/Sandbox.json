@@ -386,6 +386,129 @@
           "response": []
         },
         {
+          "name": "createUser",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "3d506f56-a367-46f4-9681-6b5cd10df956",
+                "exec": [
+                  "pm.globals.set(\"jsonBody\", JSON.stringify(pm.iterationData.toObject()));",
+                  "// pm.globals.set(\"jsonBody\",JSON.stringify(jsonBody));"
+                ],
+                "type": "text/javascript"
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "id": "88a6741e-7698-4e04-826a-5183d43b7a54",
+                "exec": [
+                  "pm.test(\"Status code is 201\", function () {",
+                  "    pm.response.to.have.status(201);",
+                  "});",
+                  "pm.test(\"Body matches string\", function () {",
+                  "    pm.expect(pm.response.text()).to.include(\"createdAt\");",
+                  "});",
+                  "pm.test(\"Successful POST request\", function () {",
+                  "    pm.expect(pm.response.code).to.be.oneOf([201, 202]);",
+                  "});",
+                  "pm.test(\"Status code name has string\", function () {",
+                  "    pm.response.to.have.status(\"Created\");",
+                  "});",
+                  "pm.test(\"Response time is less than 1000ms\", function () {",
+                  "    pm.expect(pm.response.responseTime).to.be.below(1000);",
+                  "});",
+                  "pm.test(\"Content-Type is present\", function () {",
+                  "    pm.response.to.have.header(\"Content-Type\");",
+                  "});",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "id": "e0fbc319-9552-426d-9bf1-33edb94985ce",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"morpheus\",\n    \"job\": \"leader\"\n}"
+            },
+            "url": "{{myurl}}/users"
+          },
+          "response": []
+        },
+        {
+          "name": "updateUser",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "9e8cf2e3-45be-4260-8d58-1280d2c07bd2",
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "",
+                  "",
+                  "pm.test(\"Content Validation\", function () {",
+                  "    ",
+                  "    pm.expect(pm.response.text()).to.include(\"updatedAt\");",
+                  "});",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "id": "b1ad930d-3754-4bd2-b958-c35c358abf84",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"name\": \"morpheus\",\n    \"job\": \"zion resident\"\n}"
+            },
+            "url": "{{myurl}}/users/2"
+          },
+          "response": []
+        },
+        {
+          "name": "deleteUser",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "a38005e2-90fe-4747-bcd1-87a9e69a6c86",
+                "exec": [
+                  "pm.test(\"Status code is 204\", function () {",
+                  "    pm.response.to.have.status(204);",
+                  "});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "id": "d3c15f3a-abb9-4fe7-be99-241a7dbb873f",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{myurl}}/users/2"
+          },
+          "response": []
+        },
+        {
           "name": "getUsers Copy",
           "event": [
             {
@@ -759,129 +882,6 @@
                 }
               ]
             }
-          },
-          "response": []
-        },
-        {
-          "name": "createUser",
-          "event": [
-            {
-              "listen": "prerequest",
-              "script": {
-                "id": "3d506f56-a367-46f4-9681-6b5cd10df956",
-                "exec": [
-                  "pm.globals.set(\"jsonBody\", JSON.stringify(pm.iterationData.toObject()));",
-                  "// pm.globals.set(\"jsonBody\",JSON.stringify(jsonBody));"
-                ],
-                "type": "text/javascript"
-              }
-            },
-            {
-              "listen": "test",
-              "script": {
-                "id": "88a6741e-7698-4e04-826a-5183d43b7a54",
-                "exec": [
-                  "pm.test(\"Status code is 201\", function () {",
-                  "    pm.response.to.have.status(201);",
-                  "});",
-                  "pm.test(\"Body matches string\", function () {",
-                  "    pm.expect(pm.response.text()).to.include(\"createdAt\");",
-                  "});",
-                  "pm.test(\"Successful POST request\", function () {",
-                  "    pm.expect(pm.response.code).to.be.oneOf([201, 202]);",
-                  "});",
-                  "pm.test(\"Status code name has string\", function () {",
-                  "    pm.response.to.have.status(\"Created\");",
-                  "});",
-                  "pm.test(\"Response time is less than 1000ms\", function () {",
-                  "    pm.expect(pm.response.responseTime).to.be.below(1000);",
-                  "});",
-                  "pm.test(\"Content-Type is present\", function () {",
-                  "    pm.response.to.have.header(\"Content-Type\");",
-                  "});",
-                  ""
-                ],
-                "type": "text/javascript"
-              }
-            }
-          ],
-          "id": "e0fbc319-9552-426d-9bf1-33edb94985ce",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "POST",
-            "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n    \"name\": \"morpheus\",\n    \"job\": \"leader\"\n}"
-            },
-            "url": "{{myurl}}/users"
-          },
-          "response": []
-        },
-        {
-          "name": "updateUser",
-          "event": [
-            {
-              "listen": "test",
-              "script": {
-                "id": "9e8cf2e3-45be-4260-8d58-1280d2c07bd2",
-                "exec": [
-                  "pm.test(\"Status code is 200\", function () {",
-                  "    pm.response.to.have.status(200);",
-                  "});",
-                  "",
-                  "",
-                  "pm.test(\"Content Validation\", function () {",
-                  "    ",
-                  "    pm.expect(pm.response.text()).to.include(\"updatedAt\");",
-                  "});",
-                  ""
-                ],
-                "type": "text/javascript"
-              }
-            }
-          ],
-          "id": "b1ad930d-3754-4bd2-b958-c35c358abf84",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "PUT",
-            "header": [],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n    \"name\": \"morpheus\",\n    \"job\": \"zion resident\"\n}"
-            },
-            "url": "{{myurl}}/users/2"
-          },
-          "response": []
-        },
-        {
-          "name": "deleteUser",
-          "event": [
-            {
-              "listen": "test",
-              "script": {
-                "id": "a38005e2-90fe-4747-bcd1-87a9e69a6c86",
-                "exec": [
-                  "pm.test(\"Status code is 204\", function () {",
-                  "    pm.response.to.have.status(204);",
-                  "});"
-                ],
-                "type": "text/javascript"
-              }
-            }
-          ],
-          "id": "d3c15f3a-abb9-4fe7-be99-241a7dbb873f",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "DELETE",
-            "header": [],
-            "url": "{{myurl}}/users/2"
           },
           "response": []
         }
