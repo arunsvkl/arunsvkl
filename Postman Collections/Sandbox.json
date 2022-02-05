@@ -720,7 +720,7 @@
                   "        const ExpVals = [\"INTL\",\"ISHARES\",\"IBM\",\"Bibm\",\"IBSM\",\"FIEBM\"];",
                   "        ",
                   "        pm.expect(ExpVals).to.includes(firstword);",
-                  "        console.log(\"Array@ : \" + ExpVals.indexOf(\"IBM\"))",
+                  "        console.log(\"Array@ : \" + ExpVals.indexOf(\"IBSM\"))",
                   "    }",
                   " ",
                   "});",
