@@ -729,7 +729,7 @@
                   "pm.test(\"B2A Demo\", function () {",
                   "    ",
                   "    var bin = \" Helle there , Thsi is a test BInary Msg\";",
-                  " let b64 = btoa(bin);",
+                  " let b64 = btoa_ref(bin);",
                   " console.log (\"Encoded String : \"+b64);",
                   " let atob = atob(b64);",
                   " console.log (\"Decoded String : \"+atob);",
