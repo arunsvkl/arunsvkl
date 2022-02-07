@@ -728,7 +728,7 @@
                   "});",
                   "pm.test(\"B2A Demo\", function () {",
                   "    ",
-                  "    var bin = \" Hello there , This is a test BInary Msg\";",
+                  "    var bin = \" Hello there , This is a test Binary Msg\";",
                   " let b64 = btoa_ref(bin);",
                   " console.log (\"Encoded String : \"+b64);",
                   " let atob = atob_ref(b64);",
