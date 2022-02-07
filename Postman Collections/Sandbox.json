@@ -686,6 +686,7 @@
                 "id": "08204567-cefa-4a24-b550-51cb53033528",
                 "exec": [
                   "const btoa_ref = require('btoa');",
+                  "const atob = require('atob');",
                   "pm.test(\"Status code is 200\", function () {",
                   "    pm.response.to.have.status(200);",
                   "});",
@@ -730,6 +731,7 @@
                   "    var bin = \" Helle there , Thsi is a test BInary Msg\";",
                   " let b64 = btoa_ref(bin);",
                   " console.log (\"Encoded String : \"+b64)",
+                  "",
                   "});",
                   ""
                 ],
