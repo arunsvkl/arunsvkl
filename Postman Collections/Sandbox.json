@@ -730,9 +730,9 @@
                   "    ",
                   "    var bin = \" Helle there , Thsi is a test BInary Msg\";",
                   " let b64 = btoa(bin);",
-                  " console.log (\"Encoded String : \"+b64)",
+                  " console.log (\"Encoded String : \"+b64);",
                   " let atob = atob(b64);",
-                  " console.log (\"Decoded String : \"+atob)",
+                  " console.log (\"Decoded String : \"+atob);",
                   "});",
                   ""
                 ],
